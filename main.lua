@@ -3,3 +3,17 @@
 --- Created by srokks.
 --- DateTime: 10/01/2022 10:52
 ---
+langAPI = RegisterMod("langAPI", 1)
+include('langAPI_tables.lua')
+print('LangAPI loaded')
+function langAPI.getLangIndex(lang_code)
+    return langAPI.table.languages[lang_code].index
+end
+function langAPI.getItemName(code_name,lang_code)
+    local lang_index = langAPI.getLangIndex(lang_code)
+    return langAPI.table.category.Items[code_name][tonumber(lang_index)]
+end
+function langAPI.getPocketName(code_name,lang_code)
+    local lang_index = langAPI.getLangIndex(lang_code)
+    return langAPI.table.category.PocketItems[code_name][tonumber(lang_index)]
+end

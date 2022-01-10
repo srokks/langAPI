@@ -59,12 +59,13 @@ def genLuaTableFile():
                     f.write(k + ' = {\n')
                     for n in v.keys():
                         f.write('\t\t\t')
-                        if n[0].isdecimal():  # cheks for names with first digit and adds _ before
-                            f.write('_')
-                        if '?' in n:  # prevents ? in lua table key
-                            f.write(n.replace('?','') + ' = {')
-                        else:
-                            f.write(n + ' = {')
+                        # if n[0].isdecimal():  # cheks for names with first digit and adds _ before
+                        #     f.write('_')
+                        # if '?' in n:  # prevents ? in lua table key
+                        #     f.write(n.replace('?','') + ' = {')
+                        # else:
+                        #     f.write(n + ' = {')
+                        f.write('["' + n + '"]= {')
                         for el in v[n]:
                             if el is not None:
                                 if '"' in el:
