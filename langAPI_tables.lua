@@ -1,5 +1,5 @@
 --[[
-Script parse stringtable.sta xml file from Isaac latest update to lua table used by langAPI mod
+Script parse stringtable_lang_api_221201.sta xml file from Isaac latest update to lua table used by langAPI mod
 Created by Srokks -  https://github.com/srokks
 --]]
 langAPI.table = {
