@@ -42,8 +42,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Mod for TBoI Repentance. It helps gets names/description after developers itroduces new language files with no modding api.
-It uses python to parse TBoi
+Mod for TBoI Repentance. It helps gets names/description after developers introduces new language files with no modding api.
+It uses python to parse TBoi sta lang file to readable lua tables. Api helps gets string value from tables.
+It's created to help with developing other mod coopHUD and will be documented and released after first release of coopHUD mod.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
